@@ -1,0 +1,38 @@
+# ---- Secrets & local config -------------------------------------------------
+.env
+*.secret
+
+# ---- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# ---- Runtime data & artifacts -----------------------------------------------
+# Account spreadsheets, results and logs are operator data — never committed.
+data/*.xlsx
+!data/templates/*.xlsx
+data/state/
+logs/
+result/
+*.log
+error_traceback.txt
+
+# ---- Node / dashboard -------------------------------------------------------
+dashboard/node_modules/
+dashboard/dist/
+dashboard/bun.lockb
+dashboard/.env
+
+# ---- Editor -----------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+.DS_Store
